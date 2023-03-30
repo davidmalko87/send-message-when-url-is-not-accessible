@@ -7,8 +7,8 @@ $response = Test-NetConnection $url -InformationLevel Quiet
 # Check if the website is accessible
 if ($response -ne 'True') {
     # Define email parameters
-    $sender_email = 'gas-notifier-david-test@fluentpro.com'
-    $recipient_email = 'd.malko@fluentpro.com'
+    $sender_email = 'example@example.com'
+    $recipient_email = 'example@example.com'
     $sender_password = ''
     $subject = 'Website is down'
     $body = "The website $url is not accessible."
